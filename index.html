@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dfkb — terminal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="terminal" id="terminal">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="title">dfkb ~</span>
+      <button id="themeToggle" class="theme-toggle">☼</button>
+    </div>
+
+    <div class="terminal-body">
+      <pre class="ascii"> 
+      </pre>
+
+      <h1>dfkb</h1>
+      <p class="subtitle">Artist • Sound Designer • Digital Explorer</p>
+
+      <div class="section">
+        <h2>$ whoami</h2>
+        <p>Creating sounds, visuals and digital worlds from Mexico.</p>
+      </div>
+
+      <div class="section">
+        <h2>$ now playing</h2>
+        <p id="nowPlaying" class="now-playing">No track selected</p>
+        
+        <div class="visualizer" id="visualizer">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <div class="audio-grid">
+          <button onclick="playTrack(0)">▶ Track 01</button>
+          <button onclick="playTrack(1)">▶ Track 02</button>
+          <button onclick="playTrack(2)">▶ Track 03</button>
+          <button onclick="playTrack(3)">▶ Track 04</button>
+        </div>
+        <audio id="player" controls style="width:100%; margin-top:15px;"></audio>
+      </div>
+
+      <div class="section">
+        <h2>$ links</h2>
+        <ul class="links">
+          <li><a href="#" target="_blank">🌐 Website</a></li>
+          <li><a href="#" target="_blank">📸 Instagram</a></li>
+          <li><a href="#" target="_blank">🎵 SoundCloud</a></li>
+          <li><a href="#" target="_blank">🐙 GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="terminal-footer">
+      <p>© 2026 dfkb • Running on GitHub Pages</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
