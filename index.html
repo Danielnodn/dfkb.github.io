@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dfkb player</title>
+  <title>dfkb // sound terminal</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
 </head>
@@ -17,8 +17,16 @@
       <button id="themeToggle" class="theme-toggle">☼</button>
     </div>
     <div class="terminal-body">
-      <h1>$ audio</h1>
-      <div class="subtitle" id="nowPlaying">▶ Select a track to play</div>
+      <h1>$ connection established... welcome.</h1>
+      <blockquote>stepping into the frequency. raw frequencies, direct from the underground. drop your guard and tune in.</blockquote>
+      <br>
+      <h1>$ audio_vault</h1>
+      <div class="subtitle-container">
+        <div class="subtitle" id="nowPlaying">▶ load frequency... select a track fragment</div>
+        <div id="youtubeLinkContainer" class="youtube-link-container hidden">
+          <a id="youtubeLink" href="#" target="_blank">▶ watch on youtube</a>
+        </div>
+      </div>
       <div id="playerDisplay" class="player-display hidden">
         <img id="activeCover" class="active-cover" src="" alt="Cover Art">
         <div class="waveform-box">
@@ -39,20 +47,25 @@
           </div>
         </div>
       </div>
-      <h2>Tracks</h2>
+      <h2>$ transmissions</h2>
       <div class="audio-grid">
-        <button onclick="playTrack(0)"><img class="btn-thumb" src="assets/images/covers/cover1.jpg" alt="c"> Track 01</button>
-        <button onclick="playTrack(1)"><img class="btn-thumb" src="assets/images/covers/cover2.jpg" alt="c"> Track 02</button>
-        <button onclick="playTrack(2)"><img class="btn-thumb" src="assets/images/covers/cover3.jpg" alt="c"> Track 03</button>
-        <button onclick="playTrack(3)"><img class="btn-thumb" src="assets/images/covers/cover4.jpg" alt="c"> Track 04</button>
+        <button onclick="playTrack(0)"><img class="btn-thumb" src="assets/images/covers/cover1.jpg" alt="c"> raw_cut_01</button>
+        <button onclick="playTrack(1)"><img class="btn-thumb" src="assets/images/covers/cover2.jpg" alt="c"> midnight_freq</button>
+        <button onclick="playTrack(2)"><img class="btn-thumb" src="assets/images/covers/cover3.jpg" alt="c"> sub_zero_session</button>
+        <button onclick="playTrack(3)"><img class="btn-thumb" src="assets/images/covers/cover4.jpg" alt="c"> terminal_state</button>
       </div>
       <br>
-      <h2>$ links</h2>
+      <h2>$ network</h2>
       <div class="links">
-        <p><a href="#">[peatron]</a> <a href="#">[soundcloud]</a> <a href="#">[instagram]</a></p>
+        <p><a href="https://patreon.com" target="_blank">[patreon]</a> <a href="https://soundcloud.com" target="_blank">[soundcloud]</a> <a href="#" target="_blank">[bandcamp]</a> <a href="https://instagram.com/dfkbirth" target="_blank">[instagram]</a></p>
+      </div>
+      <br>
+      <h2>$ restricted_access</h2>
+      <div class="links">
+        <p>[lock in for cassettes & heavy merch] (drop incoming // stay close)</p>
       </div>
     </div>
-    <div class="terminal-footer">$ @dfkb &copy; all rights reserved</div>
+    <div class="terminal-footer">$ @dfkbirth &copy; all rights reserved</div>
   </div>
   <script src="script.js"></script>
 </body>
